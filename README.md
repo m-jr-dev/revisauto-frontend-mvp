@@ -50,5 +50,5 @@ Utilize credenciais administrativas para funcionalidades avançadas:
 
 ```text
 Usuário: admin
-Senha: Admin@123
+Senha: admin
 ```
