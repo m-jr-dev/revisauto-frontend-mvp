@@ -1,48 +1,54 @@
-# RevisAuto - Front-end (SPA)
+# 🌐 RevisAuto Frontend MVP
 
-Este é o front-end do MVP de um sistema web. Desenvolvido com HTML, CSS e JavaScript puro, a aplicação consome uma API REST para cadastro, listagem e remoção de usuários. O design usa Bootstrap e estilização personalizada.
+**RevisAuto Frontend** é uma aplicação SPA em HTML, CSS e JavaScript puro para consumir a API RevisAuto Backend.
 
-## 🎯 Funcionalidades
+---
 
-- Cadastrar usuários via formulário
-- Listar usuários em cards
-- Deletar usuários
-- Comunicação com todas as rotas da API
-- Navegação dinâmica (SPA)
+## 📝 Requisitos
 
-## 🌐 Como executar
+- Navegador compatível com ES6+  
+- API RevisAuto Backend disponível em `http://localhost:5000/`  
 
-1. **Baixe o projeto ou clone o repositório**:
+---
+
+## ⚙️ Instalação
 
 ```bash
 git clone https://github.com/m-jr-dev/revisauto-frontend-mvp.git
-```
-
-2. **Abra o arquivo `index.html` com duplo clique** (não precisa de servidor local ou extensão)
-
-> ⚠️ O projeto foi desenvolvido para rodar diretamente no navegador, sem dependências externas JS além do Bootstrap.
-
-## 📦 Tecnologias utilizadas
-
-- HTML5
-- CSS3 (customizado + Bootstrap)
-- JavaScript ES6+
-
-## 📁 Estrutura de arquivos
-
-```
-frontend/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-└── README.md
+cd revisauto-frontend-mvp
 ```
 
 ---
 
-## 💡 Observações
+## 🚀 Uso
 
-- Não foram utilizados frameworks como React/Vue/Angular (conforme exigência).
-- SPA 100% funcional apenas com JS puro.
+- Abra `index.html` diretamente no navegador.
+
+---
+
+## ⚙️ Configuração da API
+
+Edite `js/app.js` para ajustar o endpoint da API:
+
+```javascript
+const API_BASE_URL = 'http://localhost:5000/';
+```
+
+---
+
+## ✨ Funcionalidades
+
+- Autenticação de usuário (admin)  
+- Listagem de manutenções  
+- Cadastro, busca e exclusão de registros  
+
+---
+
+## 🔒 Autenticação
+
+Utilize credenciais administrativas para funcionalidades avançadas:
+
+```text
+Usuário: admin
+Senha: Admin@123
+```
