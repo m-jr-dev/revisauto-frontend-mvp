@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RevisAuto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .hidden { display: none; }
+    .login-box {
+      max-width: 400px;
+	  height: 250px;
+      margin: 60px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    .login-box h2 {
+      margin-bottom: 20px;
+    }
+    .login-box input {
+      width: 90%;
+      margin: 8px 0;
+      padding: 10px;
+	  cursor: pointer;
+    }
+	
+	.logout-btn {
+      padding: 6px 12px;
+      border: none;
+      background: #ffffff;
+	  color: #2c6ffe;
+      border-radius: 4px;
+      cursor: pointer;
+	  text-decoration: none;
+	  margin-top: 50px;
+    }
+    .logout-btn:hover {
+      background: #e0e0e0;
+	  color: #4d7fff;
+    }
+	.btn-sair {
+    text-align: right;
+}
+  </style>
+</head>
+<body>
+  <header class="app-header hidden" id="app-header">
+  <div class="btn-sair">
+   <a href="index.html" id="logout-btn" class="logout-btn">Sair</a>
+   </div>
+    <h1>RevisAuto</h1>
+    <span id="user-welcome" style="font-size: 0.9rem; margin-left: 15px;"></span>
+  </header>
+
+  <!-- LOGIN SCREEN -->
+  <main id="login-screen" class="login-box">
+    <h2>Login</h2>
+    <input type="text" id="login-usuario" placeholder="Usuário" required/>
+    <input type="password" id="login-senha" placeholder="Senha" required/>
+    <button id="login-btn">Entrar</button>
+    <div id="login-erro" style="color: red; margin-top: 10px;"></div>
+  </main>
+
+  <!-- ADMIN SCREEN -->
+  <main id="admin-screen" class="main-content hidden">
+    <h2>Cadastro de Usuários</h2>
+    <form id="usuario-form">
+      <input type="text" id="nome_completo" placeholder="Nome completo" required/>
+      <input type="text" id="usuario" placeholder="Usuário" required/>
+      <input type="password" id="senha" placeholder="Senha" required/>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <h3>Usuários cadastrados:</h3>
+    <ul id="usuarios-list"></ul>
+  </main>
+
+  <!-- USER SCREEN -->
+  <main id="user-screen" class="main-content hidden">
+    <section class="form-section">
+      <h2>Nova Manutenção</h2>
+      <form id="manutencao-form"></form>
+    </section>
+    <section class="list-section">
+      <h2>Minhas Manutenções</h2>
+      <div id="manutencoes"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

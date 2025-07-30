@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Wallpaper apenas para a tela de login */
+body.login-active {
+  background: url("img/bg.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.app-header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  margin-top: 200px;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 90%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.login-box button:hover {
+  background: #0056b3;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.main-content h2,
+.main-content h3 {
+  color: #007bff;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form input {
+  display: block;
+  margin: 8px 0;
+  padding: 10px;
+  width: 97%;
+  border: 1px solid #ccc;
+}
+
+form select {
+  display: block;
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.list-section div {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.list-section div strong {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.list-section button {
+  margin-right: 5px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.list-section button:hover {
+  background: #c82333;
+}
+
+.list-section button:first-of-type {
+  background: #28a745;
+}
+
+.list-section button:first-of-type:hover {
+  background: #218838;
+}
