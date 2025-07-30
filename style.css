@@ -41,6 +41,7 @@ body.login-active {
   margin: 8px 0;
   padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .login-box button {
@@ -51,6 +52,7 @@ body.login-active {
   cursor: pointer;
   margin-top: 30px;
   width: 100%;
+  border-radius: 5px;
 }
 
 .login-box button:hover {
@@ -96,6 +98,7 @@ form button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 form button:hover {
@@ -121,6 +124,7 @@ form button:hover {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .list-section button:hover {
